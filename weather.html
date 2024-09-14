@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web Page</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <header>
+        <h1>Current Weather</h1>
+        <p>Enter your location or let us fetch it automatically to get the weather details.</p>
+    </header>
+
+    <section id="weather-form">
+        <input type="text" id="location" placeholder="Enter location">
+        <button onclick="fetchWeather()">Get Weather</button>
+        <button onclick="getUserLocation()">Use Current Location</button>
+    </section>
+
+    <section id="weather-result">
+        <h2>Weather Details</h2>
+        <div id="weather-data">Temperature, conditions, and other details will appear here.</div>
+    </section>
+
+    <script src="weather.js"></script>
+</body>
+</html>
